@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/passRegister"
+        android:layout_width="258dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="25dp"
+        android:background="@layout/rounded_border_edittext"
+        android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+        android:ems="10"
+        android:fontFamily="@font/francois_one"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="40px"
+        android:paddingRight="80px"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameRegister" />
+
+    <EditText
+        android:id="@+id/usernameRegister"
+        android:layout_width="258dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="25dp"
+        android:background="@layout/rounded_border_edittext"
+
+        android:drawableLeft="@drawable/ic_baseline_login_24"
+        android:ems="10"
+        android:fontFamily="@font/francois_one"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:paddingLeft="40px"
+        android:paddingRight="80px"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surnameRegister" />
+
+    <EditText
+        android:id="@+id/firstNameRegister"
+        android:layout_width="258dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="152dp"
+        android:background="@layout/rounded_border_edittext"
+        android:drawableLeft="@drawable/ic_name"
+
+        android:ems="10"
+        android:fontFamily="@font/francois_one"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="40px"
+        android:paddingRight="80px"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/surnameRegister"
+        android:layout_width="258dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="25dp"
+        android:background="@layout/rounded_border_edittext"
+
+        android:drawableLeft="@drawable/ic_surname"
+        android:ems="10"
+        android:fontFamily="@font/francois_one"
+        android:hint="Surname"
+        android:inputType="textPersonName"
+        android:paddingLeft="40px"
+        android:paddingRight="80px"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameRegister" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="157dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="68dp"
+        android:background="@layout/rounded_border_edittext"
+        android:backgroundTint="@color/purple_700"
+        android:fontFamily="@font/francois_one"
+        android:text="REGISTER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passRegister"
+        app:strokeColor="#FFFFFF" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

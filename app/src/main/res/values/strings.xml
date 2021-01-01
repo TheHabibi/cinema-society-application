@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">cinemasociety</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="tab_text_1">PAST</string>
+    <string name="tab_text_2">UPCOMING</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

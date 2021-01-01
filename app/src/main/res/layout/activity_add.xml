@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context=".menu.AddActivity">
+
+    <EditText
+        android:id="@+id/firstNameRegister"
+        android:layout_width="258dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="76dp"
+        android:background="@layout/rounded_border_edittext"
+        android:ems="10"
+        android:fontFamily="@font/francois_one"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        android:paddingLeft="40px"
+        android:paddingRight="80px"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="188dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="24dp"
+        android:onClick="onClick"
+        android:src="@drawable/ic_image"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameRegister"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="157dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="44dp"
+        android:background="@layout/rounded_border_edittext"
+        android:backgroundTint="@color/purple_700"
+        android:fontFamily="@font/francois_one"
+        android:text="ADD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDate"
+        app:strokeColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonDate"
+        android:layout_width="157dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="224dp"
+        android:background="@layout/rounded_border_edittext"
+        android:backgroundTint="@color/purple_700"
+        android:fontFamily="@font/francois_one"
+        android:onClick="onClick"
+        android:text="PICK DATE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
